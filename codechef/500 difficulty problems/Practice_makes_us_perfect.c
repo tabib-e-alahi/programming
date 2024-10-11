@@ -5,12 +5,21 @@ int main()
     scanf("%d %d %d %d",&w,&x,&y,&z);
     if(w>=10)
     {
-            printf("Yes\n");
+        c++;
     }
-    else
+    if(x>=10)
     {
-            printf("No\n");
+        c++;
     }
+    if(y>=10)
+    {
+        c++;
+    }
+    if(z>=10)
+    {
+        c++;
+    }
+     printf("%d\n",c);
     return 0;
 }
 
