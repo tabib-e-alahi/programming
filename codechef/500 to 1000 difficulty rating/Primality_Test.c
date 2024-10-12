@@ -22,11 +22,9 @@ int main()
         if(c > 0)
         {
             printf("no\n");
-            printf("%d\n",c);
         }
         else{
             printf("yes\n");
-            printf("%d\n",c);
         }
 
     }
