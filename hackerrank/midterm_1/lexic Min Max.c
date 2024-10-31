@@ -1,48 +1,51 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
+
 int main()
 {
-    char a[1001], b[1001], c[1001], min[10001], max[10001];
-    scanf("%s %s %s",a, b, c);
-    if(strcmp(a,b) > 0 && strcmp(a,c) > 0)
+    char a[1001], b[1001], c[1001], min[1001], max[1001];
+    scanf("%s %s %s", a, b, c);
+
+    if (strcmp(a, b) > 0 && strcmp(a, c) > 0)
     {
-        strcpy(max,a);
-        if(strcmp(b,c) > 0)
+        strcpy(max, a);
+        if (strcmp(b, c) < 0)
         {
-            strcpy(min,c);
+            strcpy(min, b);
         }
         else
         {
-            strcpy(min,b);
+            strcpy(min, c);
         }
     }
-    else if(strcmp(b,a) > 0 && strcmp(b,c) > 0)
+    else if (strcmp(b, a) > 0 && strcmp(b, c) > 0)
     {
-        strcpy(max,b);
-        if(strcmp(a,c) > 0)
+        strcpy(max, b);
+        if (strcmp(a, c) < 0)
         {
-            strcpy(min,c);
+            strcpy(min, a);
         }
         else
         {
-            strcpy(min,a);
+            strcpy(min, c);
         }
     }
-    else if(strcmp(c,a) > 0 && strcmp(c,b) > 0)
+    else
     {
-        strcpy(max,c);
-        if(strcmp(a,b) > 0)
+        strcpy(max, c);
+
+        if (strcmp(a, b) < 0)
         {
-           strcpy(min,b);
+            strcpy(min, a);
         }
         else
         {
-            strcpy(min,a);
+            strcpy(min, b);
         }
     }
-    printf("%s\n",min);
-    printf("%s\n",max);
+
+    printf("%s\n", min);
+    printf("%s\n", max);
 
     return 0;
 }
-
