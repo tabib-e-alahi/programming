@@ -14,18 +14,16 @@ int main()
     }
 
     // now change the size to extra 5
-    arr = realloc(arr, (n+5) * sizeof(int));
-    if(arr = NULL){
-        printf("Not possible\n");
-    }
-    printf("\n\nAfter using realloc:\n");
-    for(int i = n+1; i <= n+5; i++){
-        arr[i] = i;
-    }
+    // arr = realloc(arr, (n+5) * sizeof(int));
 
-    for(int i = 1; i <= n+5; i++){
-        printf("%d ", *(arr + i));
-    }
+    // printf("\n\nAfter using realloc:\n");
+    // for(int i = n+1; i <= n+5; i++){
+    //     arr[i] = i;
+    // }
+
+    // for(int i = 1; i <= n+5; i++){
+    //     printf("%d ", *(arr + i));
+    // }
 
     free(arr);
 
