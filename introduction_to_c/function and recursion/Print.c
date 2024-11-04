@@ -2,11 +2,12 @@
 
 void print(int x, int n)
 {
-    if(n < x)
+    if(n == x)
     {
+        printf("%d",x);
         return;
     }
-    printf("%d\n",x);
+    printf("%d ",x);
     print(x+1,n);
 }
 
