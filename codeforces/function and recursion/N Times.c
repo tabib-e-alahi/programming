@@ -8,7 +8,7 @@ void print_avg(double n[], int t)
         sum += n[i];
     }
     double res = sum / t;
-    printf("%f\n", res);  // Changed from %lf to %f
+    printf("%f\n", res);
 }
 
 int main()
