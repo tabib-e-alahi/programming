@@ -14,7 +14,7 @@ int main()
         }
         else
         {
-            printf("%d\n", mul / x);
+            printf("%lld\n", mul / x);
         }
     }
     return 0;
